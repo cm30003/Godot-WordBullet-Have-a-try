@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://mm0ka8xn2bh4"]
+
+[ext_resource type="Texture2D" uid="uid://d1t718e4lyfbc" path="res://2D/Sprite/游戏界面.png" id="1_crcrp"]
+[ext_resource type="Script" uid="uid://csdi7yq48ryek" path="res://Scripts/UI_EntryAnimation.gd" id="1_dbvrv"]
+[ext_resource type="Texture2D" uid="uid://ckuxh46pfwpxu" path="res://2D/Sprite/描述界面.png" id="2_638fk"]
+[ext_resource type="Texture2D" uid="uid://qonxatpu6nx5" path="res://2D/Sprite/对话界面.png" id="3_638fk"]
+[ext_resource type="Texture2D" uid="uid://cpk1ia2lwok3t" path="res://2D/Sprite/kalian-base1.png" id="4_yg5l6"]
+
+[sub_resource type="Theme" id="Theme_638fk"]
+
+[node name="Fight_UI" type="Control" unique_id=2037005098]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_638fk")
+script = ExtResource("1_dbvrv")
+
+[node name="BackImage" type="NinePatchRect" parent="." unique_id=1519957401]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_crcrp")
+region_rect = Rect2(136, 0, 175, 119)
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="Describe_Window" type="NinePatchRect" parent="." unique_id=34152639]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -916.0
+offset_top = -420.0
+offset_right = -124.0
+offset_bottom = -61.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("2_638fk")
+patch_margin_left = 4
+patch_margin_top = 34
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="Chat_Window" type="NinePatchRect" parent="." unique_id=814910422]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -911.0
+offset_top = 72.0
+offset_right = -119.0
+offset_bottom = 616.0
+grow_horizontal = 0
+texture = ExtResource("3_638fk")
+patch_margin_left = 16
+patch_margin_top = 46
+patch_margin_right = 14
+patch_margin_bottom = 14
+
+[node name="Character_Window" type="NinePatchRect" parent="." unique_id=1953562765]
+layout_mode = 1
+offset_left = 128.0
+offset_top = 72.0
+offset_right = 904.0
+offset_bottom = 528.0
+texture = ExtResource("3_638fk")
+patch_margin_left = 16
+patch_margin_top = 46
+patch_margin_right = 14
+patch_margin_bottom = 14
+
+[node name="Kalian" type="TextureRect" parent="Character_Window" unique_id=2071270158]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -296.0
+offset_top = -218.0
+offset_right = 2184.0
+offset_bottom = 3290.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_yg5l6")
+
+[node name="Bullet_Window" type="NinePatchRect" parent="." unique_id=1972204140]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 128.0
+offset_top = -508.0
+offset_right = 904.0
+offset_bottom = -56.0
+grow_vertical = 0
+texture = ExtResource("2_638fk")
+patch_margin_left = 4
+patch_margin_top = 34
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Bullet_Window" unique_id=981743285]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = 64.0
+offset_right = -56.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bullet_Group_Vertical" type="VBoxContainer" parent="Bullet_Window/ScrollContainer" unique_id=930497901]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Bullet" type="Button" parent="Bullet_Window/ScrollContainer/Bullet_Group_Vertical" unique_id=1100787964]
+clip_contents = true
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "一颗子弹，一个敌手"
+alignment = 0
+
+[node name="Bullet2" type="Button" parent="Bullet_Window/ScrollContainer/Bullet_Group_Vertical" unique_id=10062979]
+clip_contents = true
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "一颗子弹，一个敌手"
+alignment = 0
+
+[node name="Bullet3" type="Button" parent="Bullet_Window/ScrollContainer/Bullet_Group_Vertical" unique_id=2090754375]
+clip_contents = true
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "一颗子弹，一个敌手"
+alignment = 0
+
+[node name="Bullet4" type="Button" parent="Bullet_Window/ScrollContainer/Bullet_Group_Vertical" unique_id=275797946]
+clip_contents = true
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "一颗子弹，一个敌手"
+alignment = 0

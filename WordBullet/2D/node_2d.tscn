@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://b4b2eqga4usp6"]
+
+[ext_resource type="Texture2D" uid="uid://buq7gh4y80pwh" path="res://2D/Sprite/兔 角色立绘.png" id="2_1xgp3"]
+[ext_resource type="Script" uid="uid://0e1ovw18s8ps" path="res://Scripts/Player_RigidBody.gd" id="2_2kkll"]
+[ext_resource type="Script" uid="uid://dc1k2dhnaq31b" path="res://Scripts/MainMenu.gd" id="3_qd4ld"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2kkll"]
+radius = 37.0
+height = 158.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3sm1g"]
+bg_color = Color(0.15, 0.15, 0.15, 0.85)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ldvq"]
+bg_color = Color(0.25, 0.4, 0.7, 0.9)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Node2D" type="Node2D" unique_id=204701189]
+
+[node name="Player" type="RigidBody2D" parent="." unique_id=1653224202]
+position = Vector2(569, 305)
+gravity_scale = 0.0
+script = ExtResource("2_2kkll")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=2108986528]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_1xgp3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=931738761]
+shape = SubResource("CapsuleShape2D_2kkll")
+
+[node name="MainMenu" type="CanvasLayer" parent="." unique_id=1717306270]
+script = ExtResource("3_qd4ld")
+
+[node name="MenuPanel" type="Panel" parent="MainMenu" unique_id=2081445121]
+offset_left = 416.0
+offset_top = 154.0
+offset_right = 716.0
+offset_bottom = 458.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3sm1g")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/MenuPanel" unique_id=993407261]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="NewGame" type="Button" parent="MainMenu/MenuPanel/VBoxContainer" unique_id=1309049328]
+custom_minimum_size = Vector2(240, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ldvq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4ldvq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ldvq")
+text = "新游戏"
+
+[node name="Continue" type="Button" parent="MainMenu/MenuPanel/VBoxContainer" unique_id=381242588]
+custom_minimum_size = Vector2(240, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ldvq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4ldvq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ldvq")
+text = "继续游戏"
+
+[node name="Settings" type="Button" parent="MainMenu/MenuPanel/VBoxContainer" unique_id=1863730560]
+custom_minimum_size = Vector2(240, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ldvq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4ldvq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ldvq")
+text = "设置"
+
+[node name="Quit" type="Button" parent="MainMenu/MenuPanel/VBoxContainer" unique_id=1167869740]
+custom_minimum_size = Vector2(240, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ldvq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4ldvq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ldvq")
+text = "退出游戏"
