@@ -1,0 +1,23 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1781536107
+icon.svg::CompressedTexture2D::1032248987546973613::1781536079::1781536095::1::::<><><>0<>0<>a844cc33f2422ec468dcd6fc2526be58<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://2D/::1781536079
+Judge！.tscn::PackedScene::868574491505311959::1781536079::0::1::::<><><>0<>0<><>::uid://d1t718e4lyfbc::::res://2D/Sprite/游戏界面.png<>uid://csdi7yq48ryek::::res://Scripts/UI_EntryAnimation.gd<>uid://ckuxh46pfwpxu::::res://2D/Sprite/描述界面.png<>uid://qonxatpu6nx5::::res://2D/Sprite/对话界面.png<>uid://cpk1ia2lwok3t::::res://2D/Sprite/kalian-base1.png
+node_2d.tscn::PackedScene::4425608878612404053::1781536079::0::1::::<><><>0<>0<><>::uid://buq7gh4y80pwh::::res://2D/Sprite/兔 角色立绘.png<>uid://0e1ovw18s8ps::::res://Scripts/Player_RigidBody.gd<>uid://dc1k2dhnaq31b::::res://Scripts/MainMenu.gd
+::res://2D/Sprite/::1781538118
+kalian-base1.png::CompressedTexture2D::5847910769899923939::1781536079::1781536096::1::::<><><>0<>0<>b4ea9ac804bf5153a27f7e8fddb0e10f<>res://.godot/imported/kalian-base1.png-11d241a294b8b493e18046ca58f6cf0f.ctex::
+kalian-Leye-angry.png::CompressedTexture2D::6266477795327687554::1781536079::1781536095::1::::<><><>0<>0<>1f5b8f8edcd80fa352fd8a969ae378a6<>res://.godot/imported/kalian-Leye-angry.png-039ab2fab360e47ae9961cb6e929b05b.ctex::
+兔 角色立绘.png::CompressedTexture2D::3825181672648990407::1781536079::1781536095::1::::<><><>0<>0<>84a55af4ebea02a0901028c66dfc10bb<>res://.godot/imported/兔 角色立绘.png-3ce3a39291b33dcf8c8a97190906a27f.ctex::
+对话界面.png::CompressedTexture2D::1152753210991907896::1781536079::1781536095::1::::<><><>0<>0<>9cf76eac14f0261c1b7a5dec73d0fa8a<>res://.godot/imported/对话界面.png-1d3c9724b981d06af579e1f8cf6b0eae.ctex::
+描述界面.png::CompressedTexture2D::5517427921993871358::1781536079::1781536095::1::::<><><>0<>0<>909a952350b77af8e39a6893d9a2cbbc<>res://.godot/imported/描述界面.png-e530776c11ba1ac1c204e6ec005e2cac.ctex::
+游戏界面2.png::CompressedTexture2D::2489642199958274456::1781538118::1781538119::1::::<><><>0<>0<>ff6d986200f9a649725aeb9898d64574<>res://.godot/imported/游戏界面2.png-5f6bc952dad88e964cd4f5e70d807d44.ctex::
+游戏界面.png::CompressedTexture2D::9025386278188383560::1781536079::1781536095::1::::<><><>0<>0<>92b108bb0e9b2d9b48edcbc301cf5ea2<>res://.godot/imported/游戏界面.png-2927fd14bc3026b63b3b6cbc57fe28d1.ctex::
+::res://Gdshaders/::1781536178
+Judge！.gdshader::Shader::7762474972368857420::1781536178::0::1::::<><><>0<>0<><>::
+::res://Scripts/::1781536079
+MainMenu.gd::GDScript::7353969115299022917::1781536079::0::1::::<>CanvasLayer<><>0<>0<><>::
+Player_Move.gd::GDScript::1848572479544833435::1781536079::0::1::::<>Node2D<><>0<>0<><>::
+Player_RigidBody.gd::GDScript::1764583383095861748::1781536079::0::1::::<>RigidBody2D<><>0<>0<><>::
+Scroll_Drag.gd::GDScript::6481194004913921823::1781536079::0::1::::<>ScrollContainer<><>0<>0<><>::
+test_complete.gd::GDScript::4038216676065853802::1781536079::0::1::::<>Node2D<><>0<>0<><>::
+UI_EntryAnimation.gd::GDScript::6042977854119749290::1781536079::0::1::::<>Control<><>0<>0<><>::
